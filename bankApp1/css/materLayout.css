@@ -1,0 +1,60 @@
+﻿#logo1 {
+    margin: 10px;
+    padding-left: 5px;
+    /*width: 180px;
+    background-image: url('images/TheBanklogo.png');
+    height: 60px;*/
+}
+/*#nav, #footer, #con{
+    min-width: 935px;
+}*/ 
+#nav{  
+    margin: 0 auto 0px;
+    background-color:#CCF49C;  
+    padding: 5px;  
+}  
+ul {
+    float: right;
+    padding: 15px;
+}
+ul li {
+    display: inline;
+    padding-right: 15px;
+    
+}
+ul li a {
+    text-decoration: none;
+}
+   li a:hover{  
+    background-color: #F3FFBD;  
+    color: #FF1654;  
+    padding: 10px;  
+   }  
+#footer{  
+    background-color: #C7EFCF;  
+    text-align:left;  
+    padding: 5px;  
+    font-size: 20px; 
+    /*max-width: 935px;*/
+    margin: 0 auto 0px;
+    clear: both; 
+}
+#con {
+    /*max-width: 935px;*/
+    margin: 0 auto 0px; 
+}
+@media only screen and (min-width: 1517px){
+    #nav, #footer, #con{
+        width: 935px;
+    }
+}
+@media only screen and (max-width: 480px){
+    #nav, #footer, #con{
+        width: 95%;
+    }
+}
+@media only screen and (max-width: 1000px){
+    #nav{
+        min-height: 150px;
+    }
+}

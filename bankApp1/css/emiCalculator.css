@@ -1,0 +1,70 @@
+﻿#felxcontainer{
+    margin: 15px;
+    display: flex;
+    min-height: 100px;
+    align-items: center;
+}
+#lbl1, #lbl2, #lbl3{
+    margin: 0 0 0 10px;
+    padding: 5px;
+}
+#txtbox1, #txtbox2, #txtbox3{
+     margin: 5px 15px 5px 5px;
+}
+#btn{
+    margin-right: 5px 15px;
+}
+#info-container{
+    margin: 15px;
+    min-height: 100px;
+    align-items: center;
+    /*flex-flow: row wrap;
+    justify-content: space-around;*/
+}
+#emibox, #interestbox, #amountbox{
+    border: 1px solid #fff;
+    background-color: #adf;
+    border-radius: 5px;
+    width: 32%;
+    min-height: 92px;
+    float: left;
+    margin: 0px;
+    text-align: center;
+}
+#emibox{
+    margin-left: 12px;
+}
+#interestbox{
+    margin: 0 10px;
+}
+h3{
+    margin: 5px 0px;
+    font-weight: 300; 
+    font-size: 20px;
+}
+h5{
+    margin: 15px 0px 5px;
+    font-weight: 300; 
+    font-size: 18px;
+}
+#content-container{
+    margin: 10px;
+    min-height: 300px
+}
+/*#content-container p{
+    font-size: medium;
+}*/
+@media only screen and (min-width: 1517px ){
+    #emibox, #interestbox, #amountbox{
+        width: 30%
+    }
+    /*#amountbox{
+        margin-left: 15px;
+    }*/
+}
+/*#emivalue{
+    float: left;
+    max-width: 48%;
+    padding: 10px;
+    margin: 0px;
+}*/
