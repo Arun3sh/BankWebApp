@@ -1,77 +1,81 @@
 ﻿#title h1{
     color: #FF9900;
     text-align: center;
-    margin: 15px;
-    
+    margin: 15px;   
 }
 #main_content{
     padding: 15px;
     margin-bottom: 10px;
-    /*border: 1px solid #bbb;
-    border-radius: 10px;
-    box-shadow: 0 0 25px #999;*/
     font-size: 18px;
 }
-#first{
-    width: 30%;
-    padding: 10px;
-    margin-bottom: 10px;
-    margin-right: 13px;
-    float: left;
+#main_content p{
+    text-align: justify;
+    font-size: 18px;
+    line-height: 2;
+    font-weight: 100;
+}
+#flexcontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#first, #second, #third{
+    align-self: flex-start;
+    min-width: 230px;
+    padding: 10px;    
     border: 1px solid #bbb;
     border-radius: 10px;
     box-shadow: 0 0 25px #999;
-    font-size: 14px;
+    margin: 25px;
+    
 }
-#first h2{
+#third{
+    flex-basis: 600px;
+}
+h2{
     font-family: sans-serif ;
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 0;
-    padding-left: 10px;
+    padding-left: 7.5px;
 }
 #first ul{
     margin-top: 0;
+    display: flex;
+    flex-direction: column;
 }
 #first ul li{
-    float: left;
+    
     line-height: 2;
     padding-left: 10px;
     font-size: 16px;
 }
-#second{
-    width: 30%;
-    padding: 10px;
-    margin-bottom: 10px;
-    margin-right: 13px;
-    float: left;
-    border: 1px solid #bbb;
-    border-radius: 10px;
-    box-shadow: 0 0 25px #999;
-}
-#second h2{
-    font-family: sans-serif ;
-    font-size: 16px;
-    margin-bottom: 0;
-    padding-left: 10px;
-}
 #second ol{
-    margin-top: 0;
+    margin: 15px;
 }
 #second ol li{
     line-height: 2;
     padding-left: 10px;
 }
-#third{
-    width: 30%;
-    padding: 10px;
-    margin-bottom: 10px;
-    float: right;
-    border: 1px solid #bbb;
-    border-radius: 10px;
-    box-shadow: 0 0 25px #999;
+#second ol li:hover {
+    background-color: #CCF49C;
+    color: #FF9900;
 }
-#third h5{
-    font-size: 14px;
-    line-height: 1.35;
+#third p{
+    margin: 15px;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.5;
     font-weight: 100;
+}
+@media only screen and (max-width: 884px){
+    #flexcontainer{
+        flex-direction: column;
+        justify-content: center;
+        min-width: 100%;
+        
+    }
+    #first, #second,#third{
+        align-self: center;
+        flex-basis: 0px;
+    }
 }

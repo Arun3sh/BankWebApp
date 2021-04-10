@@ -1,8 +1,15 @@
-﻿#felxcontainer{
-    margin: 15px;
+﻿#flexcontainer{
+    margin: 25px;
     display: flex;
-    min-height: 100px;
+    justify-content:space-around;
+}
+#flexitem1, #flexitem2, #flexitem3{
+    display: flex;
+    /*justify-content: space-around;*/
+    flex-basis: 250px;
     align-items: center;
+    min-width: 250px;
+    min-height: 50px;
 }
 #lbl1, #lbl2, #lbl3{
     margin: 0 0 0 10px;
@@ -11,39 +18,41 @@
 #txtbox1, #txtbox2, #txtbox3{
      margin: 5px 15px 5px 5px;
 }
-#btn{
+/*#btn{
     margin-right: 5px 15px;
-}
+}*/
 #info-container{
     margin: 15px;
     min-height: 100px;
     align-items: center;
-    /*flex-flow: row wrap;
-    justify-content: space-around;*/
+    display: flex;
+    justify-content: space-evenly;
 }
 #emibox, #interestbox, #amountbox{
     border: 1px solid #fff;
     background-color: #adf;
     border-radius: 5px;
-    width: 32%;
-    min-height: 92px;
-    float: left;
-    margin: 0px;
+    min-width: 275px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 10px;
     text-align: center;
 }
-#emibox{
+/*#emibox{
     margin-left: 12px;
 }
 #interestbox{
     margin: 0 10px;
-}
+}*/
 h3{
-    margin: 5px 0px;
+    margin: 15px 0px;
     font-weight: 300; 
     font-size: 20px;
 }
 h5{
-    margin: 15px 0px 5px;
+    margin: 15px 0px 10px;
     font-weight: 300; 
     font-size: 18px;
 }
@@ -51,20 +60,73 @@ h5{
     margin: 10px;
     min-height: 300px
 }
+
 /*#content-container p{
     font-size: medium;
 }*/
-@media only screen and (min-width: 1517px ){
-    #emibox, #interestbox, #amountbox{
-        width: 30%
+@media only screen and (max-width: 912px) {
+    #info-container {
+        flex-direction: column;
     }
-    /*#amountbox{
-        margin-left: 15px;
-    }*/
+    #emibox, #interestbox, #amountbox {
+        margin: 10px;
+    }
+    #flexcontainer {
+        padding: 10px;
+        flex-direction: column;
+        min-height: 10px;
+        justify-content: center;
+        margin-bottom: 0px;
+    }
+    #flexitem1, #flexitem2, #flexitem3{
+        min-width: 100%;
+        flex-basis: 0px;
+        justify-content: center;
+    }
+    #formulaimg {
+        width: 250px;
+        height: auto;
+        padding: 5px;
+    }
+    #lbl1, #lbl2, #lbl3 {
+        margin: 0px;
+        padding: 0px;
+    }
+    #txtbox1, #txtbox2, #txtbox3 {
+        margin: 0px;
+    }
 }
-/*#emivalue{
-    float: left;
-    max-width: 48%;
-    padding: 10px;
-    margin: 0px;
+/*@media only screen and (max-width: 992px ) {
+   
+    #emibox, #interestbox, #amountbox {
+        min-width: 200px;
+    }
+    #flexcontainer {
+        padding: 10px;
+        
+        flex-direction: column;
+        min-height: 10px;
+        justify-content: center;
+    }
+    #flexitem1, #flexitem2, #flexitem3{
+        min-width: 100%;
+        flex-basis: 0px;
+        justify-content: center;
+    }
+    #formulaimg {
+        min-width: 100%;
+        height: auto;
+    }
+    #lbl1, #lbl2, #lbl3 {
+        margin: 0px;
+        padding: 0px;
+    }
+    #txtbox1, #txtbox2, #txtbox3 {
+        margin: 0px;
+    }
 }*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  /*margin: 0;*/
+}
